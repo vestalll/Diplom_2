@@ -45,7 +45,7 @@ public class UserClient extends StellarBurgersRestClient {
                 .body(user)
                 .when()
                 .patch(USER_PATH)
-                .then().log().body();
+                .then();
     }
 
 
